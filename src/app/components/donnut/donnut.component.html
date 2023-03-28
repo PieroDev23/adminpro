@@ -1,0 +1,14 @@
+<div class="card">
+  <div class="card-body">
+    <h3>{{ title | titlecase }}</h3>
+    <div style="display: block; width: 300px; height: 300px; margin: 0 auto">
+      <canvas
+        baseChart
+        class="chart"
+        [data]="doughnutChartData"
+        [type]="doughnutChartType"
+      >
+      </canvas>
+    </div>
+  </div>
+</div>

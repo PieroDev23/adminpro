@@ -1,1 +1,27 @@
-<p>chart works!</p>
+<div class="row">
+  <div class="col-md-6">
+    <app-donnut
+      [title]="titleSales"
+      [datasets]="datasetsSales"
+      [labels]="labelsSales"
+    ></app-donnut>
+  </div>
+
+  <div class="col-md-6">
+    <app-donnut
+      [title]="titleParty"
+      [datasets]="datasetsParty"
+      [labels]="labelsParty"
+    ></app-donnut>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <app-donnut></app-donnut>
+  </div>
+
+  <div class="col-md-6">
+    <app-donnut></app-donnut>
+  </div>
+</div>

@@ -1,1 +1,61 @@
-<p>progress works!</p>
+<!-- PROGRES BAR ROW -->
+<div class="row">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Striped Progress bar</h4>
+
+        <div class="progress m-t-20">
+          <div
+            class="progress-bar bg-primary progress-bar-striped active"
+            style="height: 5px"
+            role="progressbar"
+            [style.width]="getProgress1"
+          >
+            <span class="sr-only">85% Complete (success)</span>
+          </div>
+        </div>
+
+        <div class="progress m-t-20">
+          <div
+            class="progress-bar bg-success progress-bar-striped active"
+            style="height: 5px"
+            [style.width]="getProgress2"
+            role="progressbar"
+          >
+            <span class="sr-only">85% Complete (success)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END PROGRESS BAR ROW -->
+
+<!-- COMPONENT COMUNICATION ROW -->
+<div class="row">
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+        <app-incrementador
+          [value]="15"
+          (emmitValue)="progress1 = $event"
+          [clase]="'btn-primary'"
+        ></app-incrementador>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+        <app-incrementador
+          [value]="15"
+          (emmitValue)="progress2 = $event"
+          [clase]="'btn-success'"
+        ></app-incrementador>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- COMPONENT COMUNICATION ROW -->
