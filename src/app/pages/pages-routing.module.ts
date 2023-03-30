@@ -1,3 +1,4 @@
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ChartComponent } from './chart/chart.component';
@@ -22,6 +23,10 @@ const routes: Routes = [
         path: 'charts',
         component: ChartComponent,
       },
+      {
+        path: 'account-settings',
+        component: AccountSettingsComponent
+      }
     ],
   },
 ];

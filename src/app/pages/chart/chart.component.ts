@@ -7,9 +7,7 @@ import { Component } from '@angular/core';
 })
 export class ChartComponent {
   public titleSales = 'sales';
-
   public labelsSales = ['label1', 'label2', 'label3'];
-
   public datasetsSales = [
     {
       data: [100, 200, 300],
@@ -20,9 +18,7 @@ export class ChartComponent {
 
 
   public titleParty = 'sales';
-
   public labelsParty = ['tacos', 'pastel', 'cerveza'];
-
   public datasetsParty = [
     {
       data: [20, 230, 3100],

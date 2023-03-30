@@ -8,9 +8,7 @@ import { ChartData, ChartType } from 'chart.js';
 })
 export class DonnutComponent implements OnInit {
   @Input() public title: string = 'Untitled';
-
   @Input() public labels: Array<string> = ['no labels'];
-
   @Input() public datasets = [
     {
       data: [350, 450, 100],
